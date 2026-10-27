@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dotverse</title>
+<meta name="description" content="Dotverse is a free, private desktop app for collecting and connecting ideas. Home page and privacy policy.">
+<style>
+  :root { --bg: #0f1115; --panel: #171a21; --ink: #e8e9ee; --muted: #9aa0ad; --accent: #1fa95b; --line: #262a34; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f7f7f5; --panel: #ffffff; --ink: #1b1b1d; --muted: #6b6b70; --line: #e4e4e2; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 22px; margin: 40px 0 8px; }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, li { color: var(--ink); }
+  .lead { color: var(--muted); font-size: 18px; margin-top: 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; margin: 18px 0; }
+  .dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); margin-right: 10px; vertical-align: -1px; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  td, th { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1><span class="dot"></span>Dotverse</h1>
+  <p class="lead">A free, private desktop app for collecting and connecting ideas: freeform boards for notes, images, video, audio and 3D models, all linked together in a living map.</p>
+
+  <div class="card">
+    <h3 style="margin-top:0">What it is</h3>
+    <ul>
+      <li><b>Universes</b> hold your boards. Every board is a <b>dot</b> on a map; draw lines between dots to show how ideas relate.</li>
+      <li><b>Boards</b> are infinite canvases for notes, checklists, links, pictures, video, audio, documents and 3D models.</li>
+      <li>Everything is saved on <b>your own computer</b>. Signing in is optional.</li>
+      <li>Windows 10/11. Free. No ads, no tracking.</li>
+    </ul>
+  </div>
+
+  <h2 id="sync">Sign in with Google (optional)</h2>
+  <p>If you sign in with your Google account, Dotverse keeps your universes the same on all your computers by storing them in a <b>private, hidden area of your own Google Drive</b> that only Dotverse can see. Nothing is stored on any server run by Dotverse.</p>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <p class="muted">Last updated: 26 October 2026</p>
+
+  <h3>The short version</h3>
+  <p>Dotverse does not collect, send or sell any personal data. There are no accounts on Dotverse servers, no analytics and no tracking. Your work lives on your computer and, only if you choose to sign in, in your own Google Drive.</p>
+
+  <h3>What Dotverse stores on your computer</h3>
+  <p>Your universes, boards, cards, imported files, thumbnails, settings and backups are stored in a folder on your computer (<code>%LOCALAPPDATA%\Dotverse</code> on Windows). They never leave your computer unless you sign in with Google or export something yourself.</p>
+
+  <h3>If you sign in with Google</h3>
+  <table>
+    <tr><th>What Dotverse asks Google for</th><th>Why</th></tr>
+    <tr><td>Your email address and basic sign-in (<code>openid</code>, <code>email</code>)</td><td>To show which account you're signed in with and to tell your computers apart from someone else's.</td></tr>
+    <tr><td>Its own application data in your Google Drive (<code>drive.appdata</code>)</td><td>To store your universes, boards, cards, themes and media so your other computers can fetch them. This permission reaches only files Dotverse itself created, in a hidden folder; Dotverse cannot see, read or change any other file in your Drive.</td></tr>
+  </table>
+  <ul>
+    <li>Your data goes <b>directly from your computer to your Google Drive</b> over an encrypted connection. It does not pass through, and is not copied to, any server operated by Dotverse or its author.</li>
+    <li>The author of Dotverse has <b>no access</b> to your Google account, your Drive or your data.</li>
+    <li>Your sign-in token is kept in your operating system's credential store (Windows Credential Manager) on your computer.</li>
+    <li>Dotverse's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements: the data is used only to provide the sync feature you asked for, and is never used for advertising, never sold and never shared with third parties.</li>
+  </ul>
+
+  <h3>Deleting your data</h3>
+  <ul>
+    <li><b>Sign out</b> (Settings → Account) stops syncing; your work stays on your computer.</li>
+    <li><b>Delete my synced data from Google Drive</b> (Settings → Account) removes everything Dotverse stored in your Drive and signs you out.</li>
+    <li>You can also remove Dotverse's access at any time under <a href="https://myaccount.google.com/connections" rel="noopener">Google Account → Security → Third-party apps &amp; services</a>; Google then deletes the hidden app data as well.</li>
+    <li>Uninstalling Dotverse keeps your local data folder; delete that folder to remove it.</li>
+  </ul>
+
+  <h3>Internet use without signing in</h3>
+  <p>The only time Dotverse contacts the internet without a sign-in is when <em>you</em> add a web link to a board: it fetches that page's title and preview image. YouTube and Vimeo links load only when you press play.</p>
+
+  <h3>Children</h3>
+  <p>Dotverse is a general-purpose tool and does not knowingly collect information from anyone, including children.</p>
+
+  <h3>Changes and contact</h3>
+  <p>If this policy changes, the new version appears on this page with a new date. Questions: use the support email shown on Google's sign-in screen for Dotverse.</p>
+
+  <p class="muted" style="margin-top:48px">Dotverse is open to use free of charge. It is provided as is, without warranty.</p>
+</main>
+</body>
+</html>
